@@ -104,3 +104,28 @@ URL: /api/documents/upload<br>
 Метод: GET<br>
 URL: /api/audit/logs<br>
 Відповідь: Вивід логу дій користувачів.<br>
+11.Створення нової версії документа:<br>
+Метод: POST<br>
+URL: /api/documents/{document_id}/version<br>
+Параметри: document_id (ID документа), version_notes (замітки до нової версії)<br>
+Відповідь: Підтвердження створення нової версії.<br>
+12.Отримання всіх версій документа:<br>
+Метод: GET<br>
+URL: /api/documents/{document_id}/versions<br>
+Параметри: document_id (ID документа)<br>
+Відповідь: Список всіх версій конкретного документа з датами змін і замітками.<br>
+13.Перегляд конкретної версії документа:<br>
+Метод: GET<br>
+URL: /api/documents/{document_id}/versions/{version_id}<br>
+Параметри: document_id (ID документа), version_id (ID версії)<br>
+Відповідь: Дані конкретної версії документа.<br>
+14.Порівняння двох версій документа:<br>
+Метод: POST<br>
+URL: /api/documents/{document_id}/versions/compare<br>
+Параметри: document_id (ID документа), version_1_id (ID першої версії), version_2_id (ID другої версії)<br>
+Відповідь: Відмінності між двома версіями документа.<br>
+15.Відновлення документа до попередньої версії:<br>
+Метод: PUT<br>
+URL: /api/documents/{document_id}/versions/{version_id}/restore<br>
+Параметри: document_id (ID документа), version_id (ID версії для відновлення)<br>
+Відповідь: Підтвердження відновлення документа до вказаної версії.<br>
