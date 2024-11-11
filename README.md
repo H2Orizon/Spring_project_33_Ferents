@@ -79,7 +79,7 @@
 <h1>REST API endpoints:</h1><br>
 <h4>1.Створення нового документа:</h4><br>
 Метод: POST<br>
-URL: /api/documents/create<br>
+URL: /api/documents/<br>
 Параметри: document_name(Назва документа), document_content(Наповнення документа),document_date(Дата документа)<br>
 Відповідь: Підтвердження додавання нового документа.<br>
 <h4>2.Отримання списку документів:</h4><br>
@@ -98,7 +98,7 @@ URL: /api/documents/{document_id}/edit<br>
 Відповідь: Підтвердження зміни в документі.<br>
 <h4>5.Видалення документа:</h4><br>
 Метод: DELETE<br>
-URL: /api/documents/{document_id}/delete<br>
+URL: /api/documents/{document_id}<br>
 Параметри: document_id(Ід документа)<br>
 Відповідь: Підтвердження видалення документа.<br>
 <h4>6.Категоризація документів:</h4><br>
